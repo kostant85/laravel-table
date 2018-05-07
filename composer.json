@@ -1,0 +1,28 @@
+{
+    "name": "kostant/laravel-table",
+    "type": "library",
+    "require": {
+        "laravel/framework": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kostant\\Table\\": "src/app/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kostant1985",
+            "email": "kostsant21@yahoo.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kostant\\Table\\ServiceProviders\\TableServiceProvider"
+            ]
+        }
+    }
+}
