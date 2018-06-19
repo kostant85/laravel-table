@@ -42,6 +42,7 @@ class Template
 
     private function needsValidation()
     {
-        return config('app.env') === 'local';
+//        return config('app.env') === 'local';
+	    return false;
     }
 }
