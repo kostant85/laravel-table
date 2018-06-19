@@ -9,7 +9,7 @@ return [
 	'middleware' => ['web'],
 	
 	'lengthMenu' => [
-		1, 10, 15, 20, 25, 30,
+		10, 15, 20, 25, 30,
 	],
 	
 	/*
