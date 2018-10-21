@@ -2,7 +2,9 @@
     "name": "kostant/laravel-table",
     "type": "library",
     "require": {
-        "laravel/framework": ">=5.4"
+        "laravel/framework": ">=5.4",
+        "laravel-enso/helpers": "1.9.*",
+        "laravel-enso/vuecomponents": "2.5.*"
     },
     "autoload": {
         "psr-4": {

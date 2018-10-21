@@ -45,4 +45,81 @@ return [
 	
 	'debounce' => 100,
 
+    /*
+    |--------------------------------------------------------------------------
+    | Default Action Buttons
+    |--------------------------------------------------------------------------
+    | Here is a list of the default action buttons. You can edit any of the
+    | defaults, or add/remove. Global buttons will be displayed above the
+    | table while row buttons on each row. Row buttons will depend on
+    | the dtRowId.
+     */
+
+    'buttons' => [
+        'global' => [
+            'create' => [
+                'icon' => 'plus',
+                'class' => null,
+                'routeSuffix' => 'create',
+                'event' => 'create',
+                'action' => 'router',
+                'label' => 'Create',
+            ],
+            'excel' => [
+                'icon' => 'file-excel',
+                'class' => null,
+                'routeSuffix' => 'exportExcel',
+                'event' => 'export-excel',
+                'action' => 'export',
+                'label' => 'Excel',
+            ],
+            'action' => [
+                'icon' => 'check',
+                'class' => null,
+                'routeSuffix' => 'action',
+                'event' => 'custom-action',
+                'postEvent' => 'custom-action-done',
+                'action' => 'ajax',
+                'method' => 'PATCH',
+                'label' => 'Action',
+                'message' => 'Custom Action. Are you sure?',
+                'confirmation' => true,
+            ],
+        ],
+        'row' => [
+            'show' => [
+                'icon' => 'eye',
+                'class' => 'is-row-button',
+                'routeSuffix' => 'show',
+                'event' => 'show',
+                'action' => 'router',
+            ],
+            'edit' => [
+                'icon' => 'pencil-alt',
+                'class' => 'is-row-button',
+                'routeSuffix' => 'edit',
+                'event' => 'edit',
+                'action' => 'router',
+            ],
+            'destroy' => [
+                'icon' => 'trash-alt',
+                'class' => 'is-row-button',
+                'routeSuffix' => 'destroy',
+                'event' => 'destroy',
+                'action' => 'ajax',
+                'method' => 'DELETE',
+                'message' => 'The selected record is about to be deleted. Are you sure?',
+                'confirmation' => true,
+                'postEvent' => 'destroyed',
+            ],
+            'download' => [
+                'icon' => 'cloud-download-alt',
+                'class' => 'is-row-button',
+                'routeSuffix' => 'download',
+                'event' => 'download',
+                'action' => 'href',
+            ],
+        ],
+    ],
+
 ];

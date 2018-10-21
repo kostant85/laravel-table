@@ -4,6 +4,7 @@ namespace Kostant\Table\Template;
 
 use Kostant\Table\Classes\Template\Builders\Columns;
 use Kostant\Table\Classes\Template\Builders\Structure;
+use Kostant\Table\Classes\Template\Builders\Buttons;
 
 class Builder
 {
@@ -18,5 +19,6 @@ class Builder
     {
         (new Structure($this->template))->build();
         (new Columns($this->template))->build();
+        (new Buttons($this->template))->build();
     }
 }
