@@ -39,5 +39,8 @@ class Structure
     private function setDefaults()
     {
         $this->template->total = false;
+        $this->template->date = false;
+        $this->template->searchable = false;
+        $this->template->labels = config('table.labels');
     }
 }

@@ -106,6 +106,8 @@ abstract class Table
                 }
             }
 
+            $columns['dtRowId'] = $entity->id;
+
             return $columns;
         })->values());
     }
