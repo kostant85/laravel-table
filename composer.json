@@ -3,8 +3,8 @@
     "type": "library",
     "require": {
         "laravel/framework": ">=5.4",
-        "laravel-enso/helpers": "1.9.*",
-        "laravel-enso/vuecomponents": "2.5.*"
+        "laravel-enso/helpers": "dev-master",
+        "laravel-enso/vuecomponents": "2.7.*"
     },
     "autoload": {
         "psr-4": {
