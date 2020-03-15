@@ -3,7 +3,7 @@
     "type": "library",
     "require": {
         "laravel/framework": ">=5.4",
-        "laravel-enso/helpers": "dev-master",
+        "laravel-enso/helpers": ">=1.15.*",
         "laravel-enso/vuecomponents": "2.7.*"
     },
     "autoload": {
